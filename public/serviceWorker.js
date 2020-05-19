@@ -23,27 +23,6 @@ self.addEventListener("install", event => {
     );
 
  });
-
-// self.addEventListener('activate', event => {
-//     event.waitUntil(
-//         cache.keys().then(keyList => {
-
-//             return Promise.all(
-//                 keyList.map(key => {
-
-//                 if (key !== CACHE_NAME && key !== DATA_CACHE_NAME) {
-
-//                     return caches.delete(key);
-//                 };
-
-//                 })
-//             );
-//         })
-//     );
-
-//     self.clients.claim();
-// });
-
 self.addEventListener("fetch", event => {
 
     if(event.request.url.includes("/api/")) {
