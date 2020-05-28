@@ -4,8 +4,10 @@ const DATA_CACHE_NAME = "data-cache-v1";
 const FILES_to_CACHE = [
 
     "/",
-    "/index.html.js",
+    "/index.html",
     "/index.js",
+    "manifest.json",
+    "indexedDB.js",
     "/styles.css",
     "/icons/icon-192x192.png",
     "/icons/icon-512x512.png"
